@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box1{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+
+            /*伸缩布局*/
+            display: flex;
+
+            /*主轴的方向*/
+            flex-direction: row;
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-direction: column-reverse;*/
+
+            /*主轴上子项的对齐方式*/
+            /*justify-content: flex-start;*/
+            /*justify-content: flex-end;*/
+            justify-content: center;
+            /*justify-content: space-around;*/
+            /*justify-content: space-between;*/
+
+            /*侧轴上子项的对齐方式*/
+            /*align-items: flex-start;*/
+            /*align-items: baseline;*/
+            align-items: center;
+        }
+
+        .item{
+            width: 100px;
+            /*height: 100px;*/
+            background-color: purple;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+   <div id="box1">
+       <div class="item" style="height: 60px">item1</div>
+       <div class="item" style="height: 70px">item2</div>
+       <div class="item" style="height: 80px">item3</div>
+   </div>
+</body>
+</html>

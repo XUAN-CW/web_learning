@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09-透视</title>
+    <style>
+        body{
+            /*透视*/
+            perspective: 300px;
+        }
+
+        img{
+            margin: 100px;
+            transition: all 5s linear;
+        }
+
+        img:active{
+            /*transform: rotateX(360deg);*/
+            transform: rotate3d(100, 110, 200, 270deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="images/mac.png" alt="" width="60%">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /*设置过渡效果*/
+            transition: all 0.5s linear;
+        }
+
+        div:active{
+            /*transform: translateX(100px);*/
+            /*transform: translateY(100px);*/
+            transform: translate(100px, 200px);
+        }
+    </style>
+</head>
+<body>
+   <div>我要移动</div>
+</body>
+</html>
